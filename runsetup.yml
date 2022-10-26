@@ -1,0 +1,11 @@
+---
+- name: apache web server
+  hosts: all
+  become: yes
+  connection: ssh
+  roles:
+     - /home/ubuntu/apacherole
+  vars:
+    - doc_root: /var/www/example
+     
+ 
