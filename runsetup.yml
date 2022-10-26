@@ -4,7 +4,7 @@
   become: yes
   connection: ssh
   roles:
-     - /home/ubuntu/apacherole
+     - /ansiblerole-apache
   vars:
     - doc_root: /var/www/example
      
